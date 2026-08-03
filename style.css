@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Arimo", sans-serif;  
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
+}
+.calculator{
+    padding: 20px;
+     background: rgba(32, 58, 67, 0.35);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    box-shadow:
+        15px 15px 30px rgba(15, 32, 39, 0.55),
+        -10px -10px 20px rgba(78, 111, 128, 0.08);
+}
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #dcdbdb;
+}
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+   background: #203A43;
+    color: #fff;
+    box-shadow:
+        6px 6px 12px rgba(15, 32, 39, 0.55),
+        -6px -6px 12px rgba(78, 111, 128, 0.10);
+
+    transition: .25s ease;
+    cursor:pointer
+}
+button:hover{
+    background: #2C5364;
+    box-shadow:
+        4px 4px 10px rgba(15, 32, 39, 0.6),
+        -4px -4px 10px rgba(90, 130, 150, 0.12);
+}
+.equalBtn{
+    background-color: #fb7c14;
+}
+.operator{
+    color: green;
+}
